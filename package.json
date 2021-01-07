@@ -1,8 +1,8 @@
 {
   "name": "leaflet-color-number-markers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A package for color and number variations of the standard leaflet markers.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "uglifyjs src/index.js -c -m -o dist/index.js --comments"
   },
