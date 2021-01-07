@@ -1,6 +1,6 @@
 {
   "name": "leaflet-color-number-markers",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A package for color and number variations of the standard leaflet markers.",
   "main": "dist/index.js",
   "scripts": {
