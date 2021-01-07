@@ -6,6 +6,9 @@
 
 import L from "leaflet";
 
+const url =
+  "https://raw.githubusercontent.com/sheiun/leaflet-color-number-markers/main/";
+
 const colors = [
   "blue",
   "gold",
@@ -32,17 +35,18 @@ export default colors.reduce((obj, color) => {
     ...obj,
     [color]: {
       origin: new L.Icon({
-        iconUrl: `img/marker-icon-2x-${color}.png`,
+        iconUrl: url + `dist/img/marker-icon-2x-${color}.png`,
         ...options,
       }),
       empty: new L.Icon({
-        iconUrl: `img/marker-icon-2x-${color}-x.png`,
+        iconUrl: url + `dist/img/marker-icon-2x-${color}-x.png`,
         ...options,
       }),
       numbers: [...Array(1000).keys()].map(
         (num) =>
           new L.Icon({
-            iconUrl: `img/${color}/marker-icon-2x-${color}-${num}.png`,
+            iconUrl:
+              url + `dist/img/${color}/marker-icon-2x-${color}-${num}.png`,
             ...options,
           })
       ),
