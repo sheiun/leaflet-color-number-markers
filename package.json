@@ -1,0 +1,17 @@
+{
+  "name": "leaflet-color-number-markers",
+  "version": "1.0.1",
+  "description": "A package for color and number variations of the standard leaflet markers.",
+  "main": "js/leaflet-color-number-markers.js",
+  "repository": "https://github.com/sheiun/leaflet-color-number-markers",
+  "homepage": "https://github.com/sheiun/leaflet-color-number-markers",
+  "author": "sheiun",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "leaflet": ">=0.7.0"
+  },
+  "keywords": [
+    "leaflet",
+    "markers"
+  ]
+}
