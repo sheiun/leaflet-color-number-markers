@@ -1,3 +1,7 @@
+/* @preserve
+ * leaflet-color-number-markers
+ * (c) 2021 sheiun
+ */
 "use strict";
 
 import L from "leaflet";
