@@ -4,7 +4,7 @@
   "description": "A package for color and number variations of the standard leaflet markers.",
   "main": "dist/index.js",
   "scripts": {
-    "build": "uglifyjs src/index.js -c -m -o dist/index.js --comments"
+    "build": "uglifyjs src/index.js -p bare_returns -c -m -o dist/index.js --comments"
   },
   "repository": "https://github.com/sheiun/leaflet-color-number-markers",
   "homepage": "https://github.com/sheiun/leaflet-color-number-markers",

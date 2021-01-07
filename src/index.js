@@ -27,7 +27,7 @@ const options = {
   shadowSize: [41, 41],
 };
 
-exports.icons = colors.reduce((obj, color) => {
+export default colors.reduce((obj, color) => {
   return {
     ...obj,
     [color]: {
@@ -40,7 +40,11 @@ exports.icons = colors.reduce((obj, color) => {
         ...options,
       }),
       numbers: [...Array(1000).keys()].map(
-        (num) => `img/${color}/marker-icon-2x-${color}-${num}.png`
+        (num) =>
+          new L.Icon({
+            iconUrl: `img/${color}/marker-icon-2x-${color}-${num}.png`,
+            ...options,
+          })
       ),
     },
   };
